@@ -16,6 +16,7 @@ html {
       font-family: var(--main-font-family);
     }
     h2 {
+      margin: 0;
       font-size: 1em;
       background-color: #102223;
     }
@@ -47,10 +48,14 @@ html {
     }
     main {
       display: flex;
+      flex-wrap: wrap;
+      padding-left: 150px;
+      padding-top: 30px;
+      gap: 50px;
+
       h2 {
         padding-top: 10px;
         padding-left: 20px;
-        width: 600px;
         height: 30px;
       }
       ul {
@@ -62,7 +67,7 @@ html {
       }
       section#lastNews {
         width: 700px;
-        height: 800px;
+        height: 600px;
         article {
           display: flex;
           width: 300px;
@@ -70,6 +75,44 @@ html {
           img {
             padding-top: 20px;
             padding-right: 20px;
+          }
+        }
+      }
+      section#News {
+        height: 300px;
+        width: 350px;
+        article {
+          display: flex;
+          img {
+            padding-top: 20px;
+            padding-right: 20px;
+            width: 150px;
+          }
+        }
+      }
+      section#gallery {
+        width: 600px;
+        div {
+          display: flex;
+          justify-content: space-around;
+          background-color: #346264;
+          padding-top: 20px;
+          padding-bottom: 20px;
+        }
+      }
+      section#connectWithUs {
+        width: 350px;
+        text-align: center;
+        ul {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 0;
+          background-color: #346264;
+          height: 50px;
+          a:visited {
+          text-decoration: none;
+          color: white;
           }
         }
       }
